@@ -1,0 +1,33 @@
+import React, { useState } from 'react'
+
+export default function UI() {
+    const[value,setValue] = useState('');
+    const handleSubmit=(event)=>{
+        event.preventDefault();
+        if(value.trim !=""){
+            addTodovalue();
+            setValue('');
+        }
+        
+    }
+    
+  return (
+    <div>
+      <body>
+        <div className="entire">
+            <div className="bg">
+
+            
+                <div className="card">
+                    <div className="todo">
+                        <h1>Welcome to To-Do</h1>
+                        <input type="text" />
+                        <button>Add Task</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </body>
+    </div>
+  )
+}
