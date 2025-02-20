@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    width: 1280px;
+    height: 100vh;
+    background: url('/src/assets/pexels-content-pixie-1405717-2736499.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.card{
+    
+    text-align: center;
+    margin-left: 100px;
+     
+}
+
+.todo{
+    margin-top: 200px
+}
+.todo h1{
+    font-size: 58px;
+    color: rgb(141, 95, 21);
+}
+
+input{
+    height: 40px;
+    width: 300px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(141, 95, 21, 0.402);
+    padding-left: 15px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(141, 95, 21);
+    
+}
