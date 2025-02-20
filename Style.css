@@ -1,0 +1,59 @@
+main .back{
+    width: 1280px;
+    height: 100vh;
+    background-color: green;
+    
+}
+.log{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(229, 226, 226);
+    margin-left: 450px;
+    margin-top: 100px;
+    box-shadow: 5px 5px 8px ;
+    
+   
+    
+}
+.log-back{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+
+form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+input{
+    
+    height: 50px;
+    width: 300px;
+    border: none;
+    background-color: rgb(216, 212, 212);
+    
+}
+.text{
+    margin-top: 80px;
+}
+
+
+
+button{
+    background-color: green;
+    width: 300px;
+    border-radius: 0;
+    color: rgb(169, 167, 167);
+}
+.bottom{
+    text-align: center;
+    color: rgb(169, 167, 167);
+}
+.bottom a{
+    color: green;
+}
