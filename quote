@@ -1,0 +1,42 @@
+import React, { useState } from 'react'
+
+export default function QuoteMain() {
+    const quoteList = [
+        "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+        "You are never too old to set another goal or to dream a new dream.",
+        "Happiness depends upon ourselves.",
+        "Do what you can, with what you have, where you are.",
+        "Believe you can and you're halfway there."
+      ];
+      const[CurrentQuotes,setCurrentQuote]=useState(quoteList[0]);
+      
+      const newQuote=()=>{
+        if (quoteList.length <= 1) return;
+        let randomIndex;
+        do{
+            randomIndex=Math.floor(Math.random()* quoteList.length);
+        }while(quoteList[randomIndex] === CurrentQuotes);
+    setCurrentQuote(quoteList[randomIndex]);
+
+      };
+  return (
+    <div>
+        <body>
+        
+      <div className="MainPage">
+        <div className="random">
+            <h1>Random quote generator</h1>
+        
+        <div className="quoteOut">
+            <div className="contentMain">
+            <div className="content">"{CurrentQuotes}"</div>
+            <button className="submit" onClick={newQuote} >Get Quote</button>
+          
+        </div>
+        </div>
+      </div>
+      </div>
+      </body>
+    </div>
+  )
+}
